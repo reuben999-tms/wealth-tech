@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wealth Tech Innovations – Business Logbook</title>
+<meta name="theme-color" content="#000000">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="side">
+  <div class="brand"><b>Wealth Tech</b><span>Innovations</span></div>
+  <nav>
+    <a href="#" data-v="dashboard">Dashboard</a>
+    <a href="#" data-v="customers">Customers</a>
+    <a href="#" data-v="repairs">Repairs</a>
+    <a href="#" data-v="sales">Sales</a>
+    <a href="#" data-v="inventory">Inventory</a>
+    <a href="#" data-v="finance">Finance</a>
+    <a href="#" data-v="log">Activity log</a>
+  </nav>
+  <div class="tools">
+    <button data-a="backup">Back up data</button>
+    <button data-a="restore">Restore backup</button>
+  </div>
+</aside>
+<div id="page">
+  <header>
+    <h1 id="title">Dashboard</h1>
+    <div class="state"><span id="conn" class="pill"></span><span id="sync" class="pill"></span></div>
+  </header>
+  <main id="main"></main>
+</div>
+<dialog id="dlg"></dialog>
+<input type="file" id="file" accept=".json" hidden>
+<datalist id="cats"></datalist>
+<script src="database.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
